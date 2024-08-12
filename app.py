@@ -6,7 +6,7 @@ import os
 library_images = [
     "https://via.placeholder.com/800x400?text=Library+Image+1",
     "https://via.placeholder.com/800x400?text=Library+Image+2",
-    "https://raw.githubusercontent.com/its0su0rj/owspracticeits-suraj/main/library1.jpg"  # Updated GitHub URL
+    "https://raw.githubusercontent.com/guptaankit01/krishnalibrary/main/library1.jpg"  # Updated GitHub URL
 ]
 
 girls_images = [
