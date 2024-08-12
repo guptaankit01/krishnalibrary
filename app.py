@@ -77,7 +77,7 @@ def display_images(images):
 
 # Display content based on the page selected
 if st.session_state['page'] == 'Library':
-    st.header("Welcome to the Library")
+    st.header("Welcome to the Krishna Library")
     st.write("This is a brief introduction about the library.")
     st.markdown('[Chat with us on WhatsApp](https://wa.me/8809680722)')
     display_images(library_images)
