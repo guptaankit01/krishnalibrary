@@ -83,6 +83,11 @@ if st.session_state['page'] == 'Library':
     st.write(
     "The library features a beautiful, calming environment with air conditioning, comfortable chairs, and proper tables. It is designed to support long-hour study sessions effectively."
 )
+    st.markdown(
+    "<span style='color:red; font-weight:bold;'>A 24/7 CCTV monitoring system ensures safety at all times.</span>",
+    unsafe_allow_html=True
+)
+
 
     st.markdown('[Chat with us on WhatsApp](https://wa.me/8809680722)')
     display_images(library_images)
@@ -90,6 +95,11 @@ if st.session_state['page'] == 'Library':
 
 elif st.session_state['page'] == 'Girls':
     st.header("Girls Section")
+    st.write(
+    "A 24/7 CCTV monitoring system ensures safety at all times.\n\n"
+    "To all the girls studying here: Embrace your strength, pursue your passions with determination, and let this library be a sanctuary where your dreams take flight. Your dedication and hard work will pave the way for a brighter future."
+)
+
     if st.button('Check Available Slots'):
         try:
             df = pd.read_csv(os.path.join('girls_slots.csv'))
