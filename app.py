@@ -18,9 +18,7 @@ girls_images = [
 ]
 
 boys_images = [
-    "https://via.placeholder.com/800x400?text=Boys+Image+1",
-    "https://via.placeholder.com/800x400?text=Boys+Image+2",
-    "https://via.placeholder.com/800x400?text=Boys+Image+3"
+    "https://raw.githubusercontent.com/guptaankit01/krishnalibrary/main/boys1.jpg"
 ]
 
 # Custom CSS for the navigation bar
@@ -98,7 +96,7 @@ elif st.session_state['page'] == 'Girls':
     st.write(
     "A 24/7 CCTV monitoring system ensures safety at all times.\n\n")
     st.markdown(
-    "<span style='color:green; font-weight:bold;'>To all the girls studying here: Embrace your strength, pursue your passions with determination, and let this library be a sanctuary where your dreams take flight. Your dedication and hard work will pave the way for a brighter future.</span>",
+    "<span style='color:green; font-weight:bold;'>To all the girls studying here: " Embrace your strength, pursue your passions with determination, and let this library be a sanctuary where your dreams take flight. Your dedication and hard work will pave the way for a brighter future."</span>",
     unsafe_allow_html=True
 )
 
@@ -125,5 +123,6 @@ elif st.session_state['page'] == 'About':
     st.header("About")
     st.image("https://raw.githubusercontent.com/guptaankit01/krishnalibrary/main/fee.jpg", use_column_width=True)
     st.write("Contact us at:")
-    st.write("**Phone:** +1234567890")
-    st.write("**Email:** info@example.com")
+    st.write("**Phone:** 8809680722")
+    st.write("**Email:** akedufiles@gmail.com
+")
