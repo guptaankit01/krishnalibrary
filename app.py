@@ -124,5 +124,4 @@ elif st.session_state['page'] == 'About':
     st.image("https://raw.githubusercontent.com/guptaankit01/krishnalibrary/main/fee.jpg", use_column_width=True)
     st.write("Contact us at:")
     st.write("**Phone:** 8809680722")
-    st.write("**Email:** akedufiles@gmail.com
-")
+    st.write("**Email:** akedufiles@gmail.com")
