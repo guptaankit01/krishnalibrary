@@ -4,15 +4,17 @@ import os
 
 # List of images for each section
 library_images = [
-    "https://via.placeholder.com/800x400?text=Library+Image+1",
-    "https://via.placeholder.com/800x400?text=Library+Image+2",
-    "https://raw.githubusercontent.com/guptaankit01/krishnalibrary/main/library1.jpg"  # Updated GitHub URL
+    
+    "https://raw.githubusercontent.com/guptaankit01/krishnalibrary/main/library1.jpg",
+    "https://raw.githubusercontent.com/guptaankit01/krishnalibrary/main/library2.jpg",
+    "https://raw.githubusercontent.com/guptaankit01/krishnalibrary/main/library31.jpg",
+    "https://raw.githubusercontent.com/guptaankit01/krishnalibrary/main/library4.jpg",
+    "https://raw.githubusercontent.com/guptaankit01/krishnalibrary/main/librarylast.jpg"# Updated GitHub URL
 ]
 
 girls_images = [
-    "https://via.placeholder.com/800x400?text=Girls+Image+1",
-    "https://via.placeholder.com/800x400?text=Girls+Image+2",
-    "https://via.placeholder.com/800x400?text=Girls+Image+3"
+    
+    "https://raw.githubusercontent.com/guptaankit01/krishnalibrary/main/girls1.jpg"
 ]
 
 boys_images = [
@@ -105,7 +107,7 @@ elif st.session_state['page'] == 'Boys':
 
 elif st.session_state['page'] == 'About':
     st.header("About")
-    st.image("https://via.placeholder.com/800x400?text=Fee+Structure", use_column_width=True)
+    st.image("https://raw.githubusercontent.com/guptaankit01/krishnalibrary/main/fee.jpg", use_column_width=True)
     st.write("Contact us at:")
     st.write("**Phone:** +1234567890")
     st.write("**Email:** info@example.com")
