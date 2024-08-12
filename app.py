@@ -89,7 +89,7 @@ if st.session_state['page'] == 'Library':
 
     st.markdown('[Chat with us on WhatsApp](https://wa.me/8809680722)')
     display_images(library_images)
-    st.video("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+    st.video("https://youtu.be/GlUyCSSF6RI?si=1MZFVshIQxZ8jKl-")
 
 elif st.session_state['page'] == 'Girls':
     st.header("Girls Section")
@@ -123,5 +123,6 @@ elif st.session_state['page'] == 'About':
     st.header("About")
     st.image("https://raw.githubusercontent.com/guptaankit01/krishnalibrary/main/fee.jpg", use_column_width=True)
     st.write("Contact us at:")
+    st.write("Ankit Gupta")
     st.write("**Phone:** 8809680722")
     st.write("**Email:** akedufiles@gmail.com")
