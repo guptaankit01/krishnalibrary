@@ -96,9 +96,12 @@ if st.session_state['page'] == 'Library':
 elif st.session_state['page'] == 'Girls':
     st.header("Girls Section")
     st.write(
-    "A 24/7 CCTV monitoring system ensures safety at all times.\n\n"
-    "To all the girls studying here: Embrace your strength, pursue your passions with determination, and let this library be a sanctuary where your dreams take flight. Your dedication and hard work will pave the way for a brighter future."
+    "A 24/7 CCTV monitoring system ensures safety at all times.\n\n")
+    st.markdown(
+    "<span style='color:green; font-weight:bold;'>To all the girls studying here: Embrace your strength, pursue your passions with determination, and let this library be a sanctuary where your dreams take flight. Your dedication and hard work will pave the way for a brighter future.</span>",
+    unsafe_allow_html=True
 )
+
 
     if st.button('Check Available Slots'):
         try:
