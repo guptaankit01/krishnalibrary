@@ -1,6 +1,9 @@
 import streamlit as st
+import streamlit.components.v1 as components
 import pandas as pd
 import os
+
+
 
 # List of images for each section
 library_images = [
@@ -107,9 +110,7 @@ elif st.session_state['page'] == 'Girls':
         "<span style='color:green; font-weight:bold;'>To all the girls studying here: Embrace your strength, pursue your passions with determination, and let this library be a sanctuary where your dreams take flight. Your dedication and hard work will pave the way for a brighter future.</span>",
         unsafe_allow_html=True
     )
-   # st.write("vacant_space=seat available, blue_tick=seat reserved")
-    st.write("vacant_space=seat available, blue_tick=seat reserved")
-
+    st.write("avl=seat available, res=seat taken")
 
     if st.button('Check Available Slots'):
         try:
@@ -121,11 +122,7 @@ elif st.session_state['page'] == 'Girls':
 
 elif st.session_state['page'] == 'Boys':
     st.header("Boys Section")
-   # st.write("avl=seat available, res=seat taken")
-   # st.write("vacant_space=seat available, blue_tick=seat reserved")
-    st.write("vacant_space=seat available, blue_tick=seat reserved")
-
-
+    st.write("avl=seat available, res=seat taken")
 
     if st.button('Check Available Slots'):
         try:
@@ -133,12 +130,298 @@ elif st.session_state['page'] == 'Boys':
             display_seat_availability(df)
         except Exception as e:
             st.error(f"Error loading the CSV file: {e}")
+    
     display_images(boys_images)
+
+    particles_js = """<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Particles.js</title>
+      <style>
+      #particles-js {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: -1; /* Send the animation to the back */
+      }
+      .content {
+        position: relative;
+        z-index: 1;
+        color: white;
+      }
+      </style>
+    </head>
+    <body>
+      <div id="particles-js"></div>
+      <div class="content">
+        <!-- Placeholder for Streamlit content -->
+      </div>
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script>
+        particlesJS("particles-js", {
+          "particles": {
+            "number": {
+              "value": 300,
+              "density": {
+                "enable": true,
+                "value_area": 800
+              }
+            },
+            "color": {
+              "value": "#0000ff"  /* Particle color set to blue */
+            },
+            "shape": {
+              "type": "circle",
+              "stroke": {
+                "width": 0,
+                "color": "#000000"
+              },
+              "polygon": {
+                "nb_sides": 5
+              }
+            },
+            "opacity": {
+              "value": 0.5,
+              "random": false,
+              "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.2,
+                "sync": false
+              }
+            },
+            "size": {
+              "value": 2,
+              "random": true,
+              "anim": {
+                "enable": false,
+                "speed": 40,
+                "size_min": 0.1,
+                "sync": false
+              }
+            },
+            "line_linked": {
+              "enable": true,
+              "distance": 100,
+              "color": "#000000",  /* Connecting lines color set to black */
+              "opacity": 0.22,
+              "width": 1
+            },
+            "move": {
+              "enable": true,
+              "speed": 0.2,
+              "direction": "none",
+              "random": false,
+              "straight": false,
+              "out_mode": "out",
+              "bounce": true,
+              "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+              }
+            }
+          },
+          "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": {
+                "enable": true,
+                "mode": "grab"
+              },
+              "onclick": {
+                "enable": true,
+                "mode": "repulse"
+              },
+              "resize": true
+            },
+            "modes": {
+              "grab": {
+                "distance": 100,
+                "line_linked": {
+                  "opacity": 1
+                }
+              },
+              "bubble": {
+                "distance": 400,
+                "size": 2,
+                "duration": 2,
+                "opacity": 0.5,
+                "speed": 1
+              },
+              "repulse": {
+                "distance": 200,
+                "duration": 0.4
+              },
+              "push": {
+                "particles_nb": 2
+              },
+              "remove": {
+                "particles_nb": 3
+              }
+            }
+          },
+          "retina_detect": true
+        });
+      </script>
+    </body>
+    </html>
+    """
+
+    components.html(particles_js, height=500)
 
 elif st.session_state['page'] == 'About':
     st.header("About")
-    st.image("https://raw.githubusercontent.com/guptaankit01/krishnalibrary/main/fee.jpg", use_column_width=True)
+    st.image(
+        "https://raw.githubusercontent.com/guptaankit01/krishnalibrary/main/fee.jpg",
+        use_column_width=True
+    )
     st.write("Contact us at:")
     st.write("Ankit Gupta")
     st.write("**Phone:** 8809680722")
     st.write("**Email:** akedufiles@gmail.com")
+
+    particles_js = """<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Particles.js</title>
+      <style>
+      #particles-js {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: -1; /* Send the animation to the back */
+      }
+      .content {
+        position: relative;
+        z-index: 1;
+        color: white;
+      }
+      </style>
+    </head>
+    <body>
+      <div id="particles-js"></div>
+      <div class="content">
+        <!-- Placeholder for Streamlit content -->
+      </div>
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script>
+        particlesJS("particles-js", {
+          "particles": {
+            "number": {
+              "value": 300,
+              "density": {
+                "enable": true,
+                "value_area": 800
+              }
+            },
+            "color": {
+              "value": "#ff0000"  /* Particle color set to red */
+            },
+            "shape": {
+              "type": "circle",
+              "stroke": {
+                "width": 0,
+                "color": "#000000"
+              },
+              "polygon": {
+                "nb_sides": 5
+              }
+            },
+            "opacity": {
+              "value": 0.5,
+              "random": false,
+              "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.2,
+                "sync": false
+              }
+            },
+            "size": {
+              "value": 2,
+              "random": true,
+              "anim": {
+                "enable": false,
+                "speed": 40,
+                "size_min": 0.1,
+                "sync": false
+              }
+            },
+            "line_linked": {
+              "enable": true,
+              "distance": 100,
+              "color": "#0000ff",  /* Connecting lines color set to blue */
+              "opacity": 0.22,
+              "width": 1
+            },
+            "move": {
+              "enable": true,
+              "speed": 0.2,
+              "direction": "none",
+              "random": false,
+              "straight": false,
+              "out_mode": "out",
+              "bounce": true,
+              "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+              }
+            }
+          },
+          "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": {
+                "enable": true,
+                "mode": "grab"
+              },
+              "onclick": {
+                "enable": true,
+                "mode": "repulse"
+              },
+              "resize": true
+            },
+            "modes": {
+              "grab": {
+                "distance": 100,
+                "line_linked": {
+                  "opacity": 1
+                }
+              },
+              "bubble": {
+                "distance": 400,
+                "size": 2,
+                "duration": 2,
+                "opacity": 0.5,
+                "speed": 1
+              },
+              "repulse": {
+                "distance": 200,
+                "duration": 0.4
+              },
+              "push": {
+                "particles_nb": 2
+              },
+              "remove": {
+                "particles_nb": 3
+              }
+            }
+          },
+          "retina_detect": true
+        });
+      </script>
+    </body>
+    </html>
+    """
+
+    components.html(particles_js, height=500)
