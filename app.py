@@ -108,6 +108,8 @@ elif st.session_state['page'] == 'Girls':
         unsafe_allow_html=True
     )
     st.write("vacant_space=seat available, blue_tick=seat reserved")
+    st.write("vacant_space=seat available, blue_tick=seat reserved")
+
 
     if st.button('Check Available Slots'):
         try:
@@ -121,6 +123,8 @@ elif st.session_state['page'] == 'Boys':
     st.header("Boys Section")
    # st.write("avl=seat available, res=seat taken")
     st.write("vacant_space=seat available, blue_tick=seat reserved")
+    st.write("vacant_space=seat available, blue_tick=seat reserved")
+
 
 
     if st.button('Check Available Slots'):
