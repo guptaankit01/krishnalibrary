@@ -110,7 +110,7 @@ elif st.session_state['page'] == 'Girls':
         "<span style='color:green; font-weight:bold;'>To all the girls studying here: Embrace your strength, pursue your passions with determination, and let this library be a sanctuary where your dreams take flight. Your dedication and hard work will pave the way for a brighter future.</span>",
         unsafe_allow_html=True
     )
-    st.write("avl=seat available, res=seat taken")
+    st.write("Blue_tick=Seat_occupied, vacant_space=seat_vacant")
 
     if st.button('Check Available Slots'):
         try:
@@ -122,7 +122,8 @@ elif st.session_state['page'] == 'Girls':
 
 elif st.session_state['page'] == 'Boys':
     st.header("Boys Section")
-    st.write("avl=seat available, res=seat taken")
+    #st.write("avl=seat available, res=seat taken")
+    st.write("Blue_tick=Seat_occupied, vacant_space=seat_vacant")
 
     if st.button('Check Available Slots'):
         try:
